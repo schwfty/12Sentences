@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<style>
 		body {
-			background-color: whitesmoke;
+			background-color: white;
       		color: black;
 			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif
 			}
 
 		h1 {
-				font-family: Arial, Helvetica, sans-serif;
-				text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
 		}
 
 		.language-list {
@@ -29,10 +29,24 @@
 		}
 
 		.logo {
-		margin: auto;
-		margin-top: 10px;
-	}
+			display: block;
+			width: 300px;
+			margin: auto;
+			margin-top: 10px;
+		}
 
+		.donate {
+			display: block;
+			width: 300px;
+			margin: auto;
+			background-color: red;
+			text-align: center;
+			font-size: 16px;
+			color: white;
+			padding: 20px 10px;
+			border-radius: 10px;
+			text-decoration: none;
+		}
 	</style>
 
 	<head>
@@ -44,8 +58,7 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
-			<img class="img-responsive" src="assets/logo1.png" alt="12 Sentences" />
+			<img class="logo" src="assets/logo1.png" alt="12 Sentences" />
 			<p class="blurb"><strong>12 Sentences in foreign languages</strong> by <strong>Native Speakers</strong>- to help you learn grammar fast! Inspired by <a href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
 			<h1>Choose a language!</h1>
 			<nav>
@@ -58,9 +71,7 @@
 					<li><a href="#">Russian 🇷🇺</a></li>
 				</ul>
 			</nav>
-			<button class="btn btn-block">Donate to 12 Sentences</button>
-		</div>
-		
+			<a class="donate" href="#">Donate to 12 Sentences</a>
 
 	<!-- Google analytics-->
 	<script>
