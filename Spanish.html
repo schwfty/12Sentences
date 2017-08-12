@@ -5,10 +5,10 @@
     body {
       background-color: white;
       color: black;
-		font-size: 16px;
-		font-family: Arial, Helvetica, sans-serif;
-		width: 90%;
-		margin: auto;
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif;
+			width: 90%;
+			margin: auto;
     }
 
 		a {
@@ -44,7 +44,6 @@
 
 		.translator-card {
 			border-top: 3px solid lightgray;
-			border-bottom: 3px solid lightgray;
 			display: block;
 		}
 
@@ -55,23 +54,31 @@
 			vertical-align: middle;
 		}
 
-		.sentence {
-			border-bottom: 3px solid lightgray;
-			display: block;
-		}
-
-		.text-sentence {
-			display: inline-block;
-			width: 70%;
-			margin: 10px 0px 10px 10px;
-			vertical-align: middle;
-		}
-
 		.play-button {
-			width: 50px;
-			display: inline-block;
+			width: 3rem;
 			vertical-align: middle;
-			margin: 10px;
+			opacity: 0.55;
+		}
+
+		table, tr {
+			font-family: Arial, Helvetica, sans-serif;
+			border-width: 3px 0px;;
+			border-style: solid;
+			border-color: lightgray;
+			border-collapse: collapse;
+		}
+
+		.language {
+			font-weight: bold;
+		}
+
+		table {
+			width: 100%;
+			margin: auto;
+		}
+
+		td {
+			padding: 10px;
 		}
 
 		.donate {
@@ -93,7 +100,8 @@
 		<script>
 			var sentence1 = new Audio();
 			sentence1.src = "assets/sentence1.mp3";
-		</script>
+</script>
+<meta name="viewport" content="width=device-width">
 	</head>
 
 	<body>
@@ -109,25 +117,32 @@
 			<img class="profile-img" src="assets/juan.jpg">		
 		</div>
 
-		<div class="sentence">
-			<p class="text-sentence">1. The apple is red: <strong>La manzana es roja</strong></p>
-		<a onmousedown="sentence1.play()"><img class="play-button" src="assets/play.jpg" alt="Play"></a>
-		</div>
-
-		<div class="sentence">
-			<p class="text-sentence">2. It is John’s apple: <strong>Es la manzana de John</strong></p>
-		<a onmousedown="sentence1.play()"><img class="play-button" src="assets/play.jpg" alt="Play"></a>
-		</div>
-
-		<div class="sentence">
-			<p class="text-sentence">3. I give John the apple: <strong>Le doy la manzana a John</strong></p>
-		<a onmousedown="sentence1.play()"><img class="play-button" src="assets/play.jpg" alt="Play"></a>
-		</div>
-
-		<div class="sentence">
-			<p class="text-sentence">4. The apple is blue: <strong>La manzana es azul</strong></p>
-		<a onmousedown="sentence1.play()"><img class="play-button" src="assets/play.jpg" alt="Play"></a>
-		</div>
+		<table>
+			<tr>
+				<td>1.</td>
+				<td class="english">The apple is red</td>
+				<td class="language">La manzana es roja</td>
+				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td class="english">It is John’s apple</td>
+				<td class="language">Es la manzana de John</td>
+				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td class="english">I give John the apple</td>
+				<td class="language">Le doy la manzana a John</td>
+				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td class="english">The apple is blue</td>
+				<td class="language">La manzana es azul</td>
+				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+		</table>
 		<a class="donate" href="#">Donate to 12 Sentences</a>
 		
 			
