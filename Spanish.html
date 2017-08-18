@@ -14,26 +14,20 @@
       color: black;
 			font-size: 16px;
 			font-family: Arial, Helvetica, sans-serif;
-			width: 95%;
+			width: 90%;
 			margin: auto;
+			max-width: 850px;
     }
 
 		a {
-			text-decoration: none;
+			text-decoration: underline;
+			color: black;
 		}
 
     h1 {
 			text-align: center;
-			margin: 5px;
 			font-size:24px;
     }
-
-		.profile-img {
-			width: 70px;
-			display: inline-block;
-			vertical-align: middle;
-			margin: 10px;
-		}
 
 		.logo {
 			display: block;
@@ -49,16 +43,30 @@
 			text-align: center;
 		}
 
-		.translator-card {
-			border-top: 3px solid lightgray;
+		.container {
 			display: block;
+			width: 100%;
+			border-top: 3px solid lightgray;
+		}
+
+		.translator-card {
+			display: block;
+			max-width: 500px;
+			margin: auto;
 		}
 
 		.translations-by {
 			display: inline-block;
-			width: 70%;
+			width: 65%;
 			margin: 10px 0px 10px 10px;
 			vertical-align: middle;
+		}
+
+		.profile-img {
+			width: 4rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 10px;
 		}
 
 		.play-button {
@@ -75,9 +83,7 @@
 			border-collapse: collapse;
 		}
 
-		.language {
-			font-weight: bold;
-		}
+		
 
 		table {
 			width: 100%;
@@ -87,28 +93,42 @@
 		td {
 			padding: 10px;
 		}
-
-		.donate {
-				display: block;
-				width: 300px;
-				margin: auto;
-				margin-top: 10px;
-				background-color: red;
-				text-align: center;
-				font-size: 16px;
-				color: white;
-				padding: 20px 10px;
-				border-radius: 10px;
+		
+		.language {
+			font-weight: bold;
 		}
+
+		footer {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: center;
+			color: black;
+		}
+
+		footer a {
+			color: black;
+		}
+
+		.ad {
+			text-align: center;
+			padding-bottom: 8rem;
+			font-size: 0.5em;
+			background-color: #eee;
+			margin: 0.1rem;
+		}
+
+
 	</style>
 
 	<head>
-		<title>12 Sentences</title>
+		<title>12 Sentences: Spanish</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
 		<script>
-			var sentence1 = new Audio();
-			sentence1.src = "assets/sentence1.mp3";
+				var sentence1 = new Audio();
+				sentence1.src = "assets/sentence1.mp3";
 		</script>
-		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	</head>
 
 	<body>
@@ -117,41 +137,100 @@
 			<h1>in Spanish 🇪🇸</h1>
 		</div>
 
-		<p class="blurb"><strong>12 Sentences in Spanish</strong> by a <strong>Native Speaker</strong>- to help you learn grammar fast! Inspired by <a href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
+		<p class="blurb"><strong>12 Sentences in Spanish</strong> by a <strong>Native Speaker</strong> - to help you learn grammar fast! Inspired by <a href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
 		
-		<div class="translator-card">
-			<p class="translations-by"><strong>Translations and audio by <a href="#">Juan</a> - a native Spanish speaker from Madrid, Spain.</strong></p>
-			<img class="profile-img" src="assets/juan.jpg">		
+		<div class="container">
+			<div class="translator-card">
+					<p class="translations-by"><strong>Translations and audio by <a href="#">Juan</a> - a native Spanish speaker from Madrid, Spain.</strong></p>
+					<img class="profile-img" src="assets/juan.jpg">		
 		</div>
+		</div>
+		
 
 		<table>
 			<tr>
-				<td>1.</td>
+				<td class="td-num">1.</td>
 				<td class="english">The apple is red</td>
 				<td class="language">La manzana es roja</td>
-				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
 			</tr>
 			<tr>
-				<td>2.</td>
+				<td class="td-num">2.</td>
 				<td class="english">It is John’s apple</td>
 				<td class="language">Es la manzana de John</td>
-				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
 			</tr>
 			<tr>
-				<td>3.</td>
+				<td class="td-num">3.</td>
 				<td class="english">I give John the apple</td>
 				<td class="language">Le doy la manzana a John</td>
-				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
 			</tr>
 			<tr>
-				<td>4.</td>
-				<td class="english">The apple is blue</td>
-				<td class="language">La manzana es azul</td>
-				<td><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+				<td class="td-num">4.</td>
+				<td class="english">We give him the apple</td>
+				<td class="language">Le damos la manzana</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="ad">AD</td>
+			</tr>
+				<tr>
+				<td class="td-num">5.</td>
+				<td class="english">He gives it to John</td>
+				<td class="language">Se lo da a John</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">6.</td>
+				<td class="english">She gives it to him</td>
+				<td class="language">Ella se lo dio a El</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">7.</td>
+				<td class="english">Is the apple red?</td>
+				<td class="language">¿Es la manzana roja?</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">8.</td>
+				<td class="english">The apples are red</td>
+				<td class="language">Las manzanas son rojas</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="ad">AD</td>
+			</tr>
+			<tr>
+				<td class="td-num">9.</td>
+				<td class="english">I must give it to him</td>
+				<td class="language">Debo darle a él</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">10.</td>
+				<td class="english">I want to give it to her</td>
+				<td class="language">Quiero darle a ella</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">11.</td>
+				<td class="english">I'm going to know tomorrow</td>
+				<td class="language">Voy a saber mañana</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
+			</tr>
+			<tr>
+				<td class="td-num">12.</td>
+				<td class="english">I can't eat the apple</td>
+				<td class="language">No puedo comer la manzana</td>
+				<td class="td-play"><a onmousedown="sentence1.play()"><img class="play-button" src="assets/playbtn.png"></a></td>
 			</tr>
 		</table>
-		<a class="donate" href="#">Donate to 12 Sentences</a>
 		
+		<footer>
+			<p>Made by <a href="http://twitter.com/schwfty">@schwfty</a></p>
+		</footer>
 			
 
     <!-- Google analytics-->

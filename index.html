@@ -13,7 +13,7 @@
       color: black;
 			font-size: 16px;
 			font-family: Arial, Helvetica, sans-serif;
-			width: 95%;
+			width: 90%;
 			margin: auto;
 			}
 
@@ -25,53 +25,71 @@
 		.language-list {
 				font-size: 1.125rem;
 				text-align: center;
-		}
-
-		.blurb {
-				margin: 10px;
+				border-bottom: 3px solid lightgray;
 		}
 
 		nav ul li {
 				list-style-type: none;
+				padding: 0.2em;
+				border-radius: 3px;
+				font-size: 1.5rem;
 		}
 
+		nav ul li a {
+			text-decoration: none;
+		}
+						
 		.logo {
 			display: block;
 			width: 300px;
 			margin: auto;
 			margin-top: 0.625rem;
+		}	
+
+		a:hover {
+    		text-decoration: underline;
+			}	
+			
+		.container {
+			display: block;
+			width: 100%;
+			border-top: 3px solid lightgray;
+			border-bottom: 3px solid lightgray;
+			margin: 10px;
+			padding: 20px;
+			text-align: center;
 		}
 
-		.donate {
+		.translator-card {
 			display: block;
-			width: 300px;
+			max-width: 500px;
 			margin: auto;
-			background-color: red;
+		}		
+
+		footer {
+			margin-top: 20px;
+			margin-bottom: 10px;
 			text-align: center;
-			font-size: 16px;
-			color: white;
-			padding: 20px 10px;
-			border-radius: 10px;
-			text-decoration: none;
+			color: black;
 		}
 	</style>
 
 	<head>
 		<title>12 Sentences</title>
-		<script>
-				var sentence1 = new Audio();
-				sentence1.src = "assets/sentence1.mp3";
-		</script>
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	</head>
 
 	<body>
 			<img class="logo" src="assets/logo1.png" alt="12 Sentences" />
-			<p class="blurb"><strong>12 Sentences in foreign languages</strong> by <strong>Native Speakers</strong>- to help you learn grammar fast! Inspired by <a href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
+		<div class="container">
+			<p class="blurb"><strong>12 Sentences with audio in foreign languages</strong> translated by <strong>Native Speakers</strong> - to help you learn grammar fast! Inspired by <a style="color: black; text-decoration: underline"href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
+		</div>
 			<h1>Choose a language!</h1>
 			<nav>
 				<ul class="language-list">
-					<li><a href="Spanish.html">Spanish 🇪🇸</a></li>
+					<li><a id="spanish-mi" href="Spanish.html">Spanish 🇪🇸</a></li>
 					<li><a href="#">Chinese 🇨🇳</a></li>
 					<li><a href="#">French 🇫🇷</a></li>
 					<li><a href="#">Italian 🇮🇹</a></li>
@@ -79,7 +97,10 @@
 					<li><a href="#">Russian 🇷🇺</a></li>
 				</ul>
 			</nav>
-			<a class="donate" href="#">Donate to 12 Sentences</a>
+
+		<footer>
+			<p>Made by <a style="color: black" href="http://twitter.com/schwfty">@schwfty</a></p>
+		</footer>
 
 	<!-- Google analytics-->
 	<script>
