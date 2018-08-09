@@ -1,0 +1,176 @@
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+    body {
+      background-color: white;
+      color: black;
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif;
+			width: 90%;
+			margin: auto;
+			max-width: 850px;
+    }
+
+		a {
+			text-decoration: underline;
+			color: black;
+		}
+
+    h1 {
+			text-align: center;
+      font-size:24px;
+      font-weight: normal;
+    }
+
+		.logo {
+			display: block;
+			width: 320px;
+			margin: auto;
+			margin-top: 0.625rem;
+		}
+
+		.blurb {
+			border-top: 3px solid lightgray;
+			padding: 20px;
+			margin: 0px;
+			text-align: center;
+		}
+
+		.container {
+			display: block;
+			width: 100%;
+			border-top: 3px solid lightgray;
+		}
+
+		.translator-card {
+			display: block;
+			max-width: 500px;
+			margin: auto;
+		}
+
+		.translations-by {
+			display: inline-block;
+			width: 65%;
+			margin: 10px 0px 10px 10px;
+			vertical-align: middle;
+			font-size: 0.9rem;
+		}
+
+		.profile-img {
+			width: 4rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 10px;
+		}
+
+		.play-button {
+			width: 3rem;
+			vertical-align: middle;
+			opacity: 0.55;
+			cursor: pointer;
+		}
+
+		table, tr {
+			font-family: Arial, Helvetica, sans-serif;
+			border-width: 3px 0px;;
+			border-style: solid;
+			border-color: lightgray;
+			border-collapse: collapse;
+		}
+
+		
+
+		table {
+			width: 100%;
+			margin: auto;
+		}
+
+		td {
+			padding: 10px;
+		}
+		
+		.language {
+			font-weight: bold;
+		}
+
+		footer {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: center;
+			color: black;
+		}
+
+		footer a {
+			color: black;
+		}
+
+		.ad {
+			text-align: center;
+			padding-bottom: 8rem;
+			font-size: 0.5em;
+			background-color: #eee;
+			margin: 0.1rem;
+		}
+		
+		.annotation {
+			font-style: initial;
+			font-size: 0.5rem;
+			color: lightgrey;
+		}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px 10px 10px 32px;
+    font-size: 24px;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #f1f1f1;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    
+.dropdownandin {
+  margin: 0 auto;
+  text-align:center;
+}
+

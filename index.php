@@ -21,6 +21,7 @@
 		h1 {
 			font-family: Arial, Helvetica, sans-serif;
 			text-align: center;
+			padding: 5px;
 		}
 
 		.language-list {
@@ -93,18 +94,20 @@
 	<body>
 			<img class="logo" src="assets/logo1.png" alt="12 Sentences" />
 		<div class="container">
-			<p class="blurb"><strong>12 Sentences with audio in foreign languages</strong> translated by <strong>Native Speakers</strong> - to help you learn grammar fast! Inspired by <a style="color: black; text-decoration: underline"href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a></p>
+			<p class="blurb"><strong>Deconstruct the grammar of a foreign language using 12 simple sentences!</strong><br><br>Translations and audio provided by <strong>Native Speakers.</strong><br><br>Inspired by <a style="color: black; text-decoration: underline"href="https://tim.blog/2007/11/07/how-to-learn-but-not-master-any-language-in-1-hour-plus-a-favor/">Tim Ferriss.</a> His book explains the method more.</p>
 		</div>
 			<h1>Choose a language!</h1>
 			<nav>
 				<ul class="language-list">
-					<li><a id="spanish-mi" href="Spanish.html">Spanish 🇪🇸</a></li>
-					<li><a href="Chinese.html">Chinese 🇨🇳</a></li>
-					<li><a href="French.html">French 🇫🇷</a></li>
-					<li><a href="Italian.html">Italian 🇮🇹</a></li>
-					<li><a href="German.html">German 🇩🇪</a></li>
-					<li><a href="Russian.html">Russian 🇷🇺</a></li>
+          <?php 
+            include 'languageslist.php';
+            foreach ($languages as &$lang) {
+              $plainlang = explode(' ',trim($lang));
+              print '<li><a href="'. $plainlang[0] . '.php">' . $lang . '</a></li>';
+            }
+          ?>
 				</ul>
+
 			</nav>
 
 		<footer>
